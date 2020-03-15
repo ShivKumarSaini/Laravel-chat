@@ -9,7 +9,7 @@ $userLogin = AppSession::getLoginData();
     <a class="btn btn-danger navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-nav-navbar-collapse" aria-expanded="false"><i class="fa fa-bars"></i> Menu</a>
     <div class="menu collapse navbar-collapse" id="bs-nav-navbar-collapse">
         <ul>
-          <li class="{{Request::is('*category*') ? 'active': ''}}" class="dropdown" id="category-sub">
+<!--           <li class="{{Request::is('*category*') ? 'active': ''}}" class="dropdown" id="category-sub">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button"
               aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i> Categories</a>
             <ul class="dropdown-menu">
@@ -19,7 +19,7 @@ $userLogin = AppSession::getLoginData();
                 @endforeach
               @endif
             </ul>
-        </li>
+        </li> -->
         <li class="{{Request::is('*all-model*') ? 'active': ''}}"><a href="{{URL('/all-model')}}" class="btn btn-grey">ALL MODELS</a></li>
 
         @if (AppSession::isLogin())
